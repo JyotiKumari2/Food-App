@@ -1,7 +1,7 @@
 {
-  "name": "namastey-react",
+  "name": "food-app",
   "version": "1.0.0",
-  "description": "Namaste React",
+  "description": "Food App built using Swiggy's API",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
