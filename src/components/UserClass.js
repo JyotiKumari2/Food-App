@@ -25,16 +25,7 @@ class UserClass extends React.Component {
      
 
      }
-
-     // Create state variable inside class component
-     // For craating state variables inside functional component , we use useState() hook inside functional componenet
-
-
-     // state variable is created whenever a class instance is created : intially there is a no concept of hooks
-
-
-
-     // ComponentDidMount()
+ 
 
     async  componentDidMount (){
       
