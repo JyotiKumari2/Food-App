@@ -12,6 +12,8 @@ const RestaurantMenu = () =>{
     const resInfo = useRestaurantMenu(resId);   // custom Hook
 
     const [showIndex, setShowIndex] = useState(null);
+    
+     
 
     if(resInfo===null) return <Shimmer/>;
     const {name, cuisines, costForTwoMessage} = resInfo?.cards[0]?.card?.card?.info;
@@ -38,6 +40,7 @@ const RestaurantMenu = () =>{
             data={category?.card?.card}
             showItems={index===showIndex?true:false}
             setShowIndex = {()=>setShowIndex(index)}
+            setShowIndexClose = {()=>setShowIndex(null)}
             
             />
            ))}
@@ -45,6 +48,9 @@ const RestaurantMenu = () =>{
 
         </div>
     );
+
+
+//    
 }
 
 export default RestaurantMenu;

@@ -49,16 +49,17 @@ const Body = () =>{
                   onChange={(e)=>{
                     setSearchText(e.target.value)
                   }}/>
-                  <button className="px-4 py-2 bg-orange-600 m-4 rounded-lg text-white font-bold" onClick={()=>{
+                  <button className="px-4 py-2 bg-orange-600 m-4 rounded-lg text-white font-bold hover:scale-105" onClick={()=>{
                     const filteredRes = listOfRes.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                     setFilteredRes(filteredRes);
                   }}>Search</button>
                </div>
-               <div className="search m-4 p-4 flex items-center font-bold"><button className="border border-solid px-4 py-2 bg-gray-100 rounded-lg shadow-lg"
+               <div className="search m-4 p-4 flex items-center font-bold"><button className="border border-solid px-4 py-2 bg-gray-100 rounded-lg shadow-lg hover:scale-105"
                onClick={()=>{
                 const filteredList = listOfRes.filter(
                     (res) =>res.info.avgRating>4.3
                 );
+              
                 setFilteredRes(filteredList);
 
                }}>Top Rated Restaurants</button></div>
